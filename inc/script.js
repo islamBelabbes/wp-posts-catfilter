@@ -16,6 +16,7 @@ const wp_cat_filter = () => {
         },
       });
     };
+    // filter //
     const filter = (filterarr) => {
       const filtertabs = document.querySelectorAll(".tabsfilter");
       filtertabs.forEach((tab) => {
@@ -39,6 +40,7 @@ const wp_cat_filter = () => {
         });
       });
     };
+    // display data //
     const display = (arr) => {
       const template = document.querySelector("[data-grid-item-templte]");
       const main = document.querySelector(".post_grid");
@@ -48,7 +50,7 @@ const wp_cat_filter = () => {
         postcard.dataset.tabs_id = item.cat_name.join(",");
         postcard.querySelector(
           "#wp-cat-categories"
-        ).textContent = `[${item.cat_name.join(",")}]`;
+        ).textContent = `[${item?.cat_name.join(",")}]`;
         postcard.querySelector("#title").textContent = item.title;
         postcard.querySelector("#title_des").textContent = item.content;
         postcard.querySelector(".post_img img").src = item.img;
