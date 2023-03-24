@@ -51,11 +51,6 @@
   -webkit-box-orient: vertical;
 }
 
-@media (width < 1000px) {
-  .post_grid {
-    grid-template-columns: 1fr;
-  }
-}
 .wp-cat-loading {
   position: absolute;
   height: 100%;
@@ -64,6 +59,18 @@
   justify-content: center;
   align-items: start;
   background-color: #ffffff;
+}
+#wp-cat-categories {
+  font-size: 1.08rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+@media (width < 1000px) {
+  .post_grid {
+    grid-template-columns: 1fr;
+  }
 }
 /* CSS */
 .button-23 {

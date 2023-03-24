@@ -9,7 +9,6 @@
  */
 
  function wp_cat_main(){
-   
     // enqueue //
     wp_enqueue_script( 'wp-cat-mainscript', plugin_dir_url( __FILE__ ) . 'inc/script.js',true );
     wp_enqueue_style( 'wp-cat-mainstyle', plugin_dir_url( __FILE__ ) . 'inc/style.css');
@@ -19,7 +18,7 @@
  // custom rest api endpoint //
 // making custom api end point //
 function wp_cat_callback(){
-    $max_posts = -1;
+    $max_posts = 20;
     $args = array( 
         'post_type'   => 'post',
         'posts_per_page' => $max_posts, 

@@ -20,7 +20,7 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex,
             mollitia.
           </h1>
-          <h1 id="wp-cat-categories" style="font-size : 1.08rem;">cat : [1,2,3,4,5]</h1>
+          <h1 id="wp-cat-categories" style="">cat : [1,2,3,4,5]</h1>
         </div>
         <div class="readmore">
           <a href="#" class="button-23 readmorebutton">Read More</a>
